@@ -14,7 +14,7 @@ type Props = {
     title: string
     info: string | JSX.Element
     arrow?: string | JSX.Element
-    
+
 }
 
 const icons = {
@@ -26,22 +26,22 @@ const icons = {
     pop: Pop,
 }
 
-const Tile = ({icon, title, info, arrow}: Props): JSX.Element => {
+const Tile = ({ icon, title, info, arrow }: Props): JSX.Element => {
 
     const Icon = icons[icon]
 
-  return (
-    <article className='w-[140px] h-[75px] text-zinc-700 bg-white/20 backdrop-blur-1g
+    return (
+        <article className='w-[140px] h-[75px] text-zinc-700 bg-white/20 backdrop-blur-1g
     rounded-md drop-shadow-1g p-2 mb-5 flex flex-col justify-between'>
-        <div className='flex items-center text-sm font-bold'>
-            <Icon /> <h4 className='ml-1'>{title}</h4>
-        </div>
-        <div className='flex'>
-            <h3 className='text-lg'>{info}</h3>
-            {/* <h3 className='ml-10'>{arrow}</h3> */}
-        </div>
-    </article>
-  )
+            <div className='flex items-center text-sm font-bold'>
+                <Icon /> <h4 className='ml-1'>{title}</h4>
+            </div>
+            <div className='flex'>
+                <h3 className='text-lg'>{info}</h3>
+                {/* <h3 className='ml-10'>{arrow}</h3> */}
+            </div>
+        </article>
+    )
 }
 
 export default Tile

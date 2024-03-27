@@ -6,6 +6,7 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
+import ProgressBar from './components/ProgressBar';
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
     <>
     <Header />
     <Navbar />
+    
     <Routes>
         <Route index path='/' element={<Main />}/>
         <Route path='about' element={<About />}/>

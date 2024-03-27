@@ -22,6 +22,8 @@ const Tides = ({tideData, tideHiLo}: Props): JSX.Element => {
             v: '',  
          };
 
+         //Get the value and time of tides
+
         let lowTide = tideHiLo.predictions[i].type === 'L';
         
             if (lowTide) {
